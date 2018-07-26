@@ -1,0 +1,6 @@
+<div class="entries-container">
+  <div *ngFor="let entrie of entries" class="entrie">
+    <a [routerLink]="['/entry', entrie._id]"><h3>{{entrie.title}}</h3></a>
+    <p>Escrito el {{entrie.date | date:'dd MMMM yyyy'}}</p>
+  </div>
+</div>
